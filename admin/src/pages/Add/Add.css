@@ -1,0 +1,162 @@
+/* .add{
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+.add form{
+    gap: 20px;
+}
+.add-img-upload img{
+    width: 120px;
+}
+.add-product-name, .add-product-description{
+    width: max(40%, 280px);
+}
+.add-product-name input, .add-product-description textarea{
+    padding: 10px;
+}
+.add-category-price{
+    display: flex;
+    gap: 30px;
+}
+.add-category-price select, .add-category-price input{
+    max-width: 120px;
+    padding: 10px;
+}
+.add-btn{
+    max-width: 120px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+} */
+
+
+/* Add.css */
+
+/* Ensure the container takes full width and centers content */
+.add {
+    width: 100%;
+    max-width: 800px; /* Limit max width for better readability */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the form container */
+  .add form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Styling for image upload section */
+  .add-img-upload {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .add-img-upload:hover {
+    background-color: #f8f8f8;
+    border: 2px dashed #007bff;
+  }
+  
+  .add-img-upload label {
+    cursor: pointer;
+  }
+  
+  .add-img-upload img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .add-img-upload img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Style the input fields */
+  .add-product-name,
+  .add-product-description,
+  .add-category-price {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* General input and textarea styles */
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
+  
+  /* Style for product description textarea */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Category and price section */
+  .add-category-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .add-category,
+  .add-price {
+    flex: 1;
+  }
+  
+  /* Style the submit button */
+  .add-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  /* Ensure all elements take full width */
+  .flex-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-col p {
+    margin: 0 0 10px;
+    font-weight: bold;
+  }
+  
